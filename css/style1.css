@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Smooch+Sans:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+:root{
+    --main-bg-color: rgb(15, 65, 141);
+}
+
+
+header {
+    width: 100%;
+    background-color: rgb(15, 65, 141);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Smooch Sans", serif;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    line-height: 60px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: beige;
+    padding: 0px 20px;
+}
+a:hover{
+    color: black;
+    font-style: bold;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 120px;
+    padding: 0px 20px;
+}
+.search{
+    display: flex;
+    padding: 130px;
+    width: 100%;
+}
+.search input{
+    width: 500px ;
+    height:30px ;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.container{
+    height: 250vh;
+    width: auto;
+}
+.slider{
+    background-color: white;
+    height: 30vh;
+    width: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 12px auto;
+}
+@keyframes slide1 {
+    0%{
+        transform: translate(0vh);
+    }
+    100%{
+        transform: translate(995px);
+    }
+}
+@keyframes slide2 {
+    0%{
+        transform: translate(-445px);
+    }
+    100%{
+        transform: translate(510px);
+    }
+}
+.img1{
+    width: 90%;
+    height: 30vh;
+    padding: 0 72px;
+    transform: translate(-440px);
+    animation: slide2 2s forwards infinite;
+}
+.img2{
+    width: 90%;
+    height: 30vh;
+    padding: 0 72px;
+    transform: translate(0);
+    animation: slide1 2s forwards infinite;
+}
+.img3{
+    width: 90%;
+    height: 30vh;
+    padding: 0 72px;
+    transform: translate(440px);
+}
+.card{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.cards{
+    display: flex;
+    margin: 10px;
+    overflow: scroll;
+    
+}
+.card-item{
+    margin: auto;
+}
+.card h2{
+    margin-bottom: 10px; 
+    padding: 10px;
+}
+.lines{
+    padding: 0 50px;
+}
+.card-item{
+    display: inline-flex;
+    flex-direction: column;
+}
+footer {
+    background-color: var(--main-bg-color);
+    color: antiquewhite;
+    height: 10vh;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    font-family: "Smooch Sans", serif;
+}

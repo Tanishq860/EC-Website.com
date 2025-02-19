@@ -1,0 +1,21 @@
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0px 10px;
+    margin: 0px 10px;
+    border-radius: 8px;
+    font-weight: 800px;
+}
+.btn:hover{
+    font-weight: bold;
+}
+.text-center{
+        text-align: center;
+}
+.my-1{
+    margin: 5px;
+}
